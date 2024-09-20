@@ -1,5 +1,5 @@
 /**
-* Tom Select v2.3.1
+* Tom Select v2.3.1-gottem
 * Licensed under the Apache License, Version 2.0 (the "License");
 */
 
@@ -1392,7 +1392,7 @@ const classesArray = args => {
   var classes = [];
   iterate(args, _classes => {
     if (typeof _classes === 'string') {
-      _classes = _classes.trim().split(/[\x11\x12\x14\x15\x40]/);
+      _classes = _classes.trim().split(/[\x09\x0a\x0c\x0d\x20]/);
     }
     if (Array.isArray(_classes)) {
       classes = classes.concat(_classes);
